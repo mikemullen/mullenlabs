@@ -1,5 +1,73 @@
 @import "bootstrap";
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #fdb014;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #af710f;
+}
+
+/* test border for identifying stuff TEMP */
+
+.whatthef {
+  border: 1px solid black;
+}
+
+/* buffer at bottom of elements */
+
+.buffer {
+  padding-bottom: 10px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -55px;
+  /* Pad bottom by footer height */
+  padding: 0 0 55px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 35px;
+  padding-top: 5px;
+  border-top: 1px solid #fdb014;
+  text-align: right;
+}
+
+.foottext {
+  display: inline;
+  color: #fdb014;
+  vertical-align: top;
+  position: relative;
+}
+
+/* move down for header */
+
+.mainstage {
+  margin-top: 90px;
+  padding-bottom: 10px;
+}
+
 #logo {
   display: inline-block;
   width: 216px;
@@ -10,6 +78,20 @@
 
 #logo:hover {
   background-image: url('logodrafton.png');
+}
+
+/* foot logo styles */
+
+#footlogo {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-image: url('footlogo.png');
+  background-size: 30px 25px;
+}
+
+#footlogo:hover {
+  background-image: url('footlogoon.png');
 }
 
 .pull-right {
@@ -37,8 +119,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  margin-top: 90px;
-  padding-bottom: 40px;
   color: #5a5a5a;
   background-color: #ffffff;
 }
