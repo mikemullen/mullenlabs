@@ -68,30 +68,30 @@ body {
   padding-bottom: 10px;
 }
 
-#logo {
+#logo:empty {
   display: inline-block;
   width: 216px;
   height: 72px;
-  background-image: url('logodraft.png');
+  background-image: asset_url('logodraft.png');
   background-size: 216px 72px;
 }
 
 #logo:hover {
-  background-image: url('logodrafton.png');
+  background-image: asset_url('logodrafton.png');
 }
 
 /* foot logo styles */
 
-#footlogo {
+#footlogo:empty {
   display: inline-block;
   width: 30px;
   height: 25px;
-  background-image: url('footlogo.png');
+  background-image: asset_url('footlogo.png');
   background-size: 30px 25px;
 }
 
 #footlogo:hover {
-  background-image: url('footlogoon.png');
+  background-image: asset_url('footlogoon.png');
 }
 
 .pull-right {
