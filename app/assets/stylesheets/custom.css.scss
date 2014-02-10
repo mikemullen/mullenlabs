@@ -1,5 +1,4 @@
-
-
+/*
 .center {
   display: block;
   margin-left: auto;
@@ -64,12 +63,11 @@ body {
 /* move down for header */
 
 .mainstage {
-  margin-top: 90px;
+  margin-top: 95px;
   padding-bottom: 10px;
 }
 
 #logo:empty {
-  display: inline-block;
   width: 216px;
   height: 72px;
   background-image: asset_url('logodraft.png');
@@ -102,10 +100,6 @@ body {
 /* nav hover link color */
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #fdb014;
-}
-
-.navbar {
-  max-height: 72px;
 }
 
 .img-responsive {
@@ -145,7 +139,7 @@ body {
 .navbar-wrapper .navbar {
   padding-left: 15px;
   padding-right: 15px;
-  height: 72px;
+  
 }
 
 
