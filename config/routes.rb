@@ -1,4 +1,7 @@
 Mullenlabs::Application.routes.draw do
+
+  resources :articles
+
   root 'static_pages#home'
   get "static_pages/cases"
   match '/about', to: 'static_pages#about', via: 'get'
