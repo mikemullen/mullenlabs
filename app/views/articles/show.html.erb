@@ -15,7 +15,7 @@
 	<p>
 	  <strong>By:</strong>
 	  <%= @article.author %> | <small>Added <%= time_ago_in_words(@article.sort_date) %> ago.</small><br />
-	  <%= simple_format h @article.text %><br />
+	  <%= simple_format raw @article.text %><br />
 	</p>
 
 	<p class="text-center">
