@@ -9,8 +9,10 @@ group :production do
   gem 'mysql2'
 end
 
+group :development do
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+  gem 'sqlite3'
+end
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -20,6 +22,9 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+
+# error message fix
+gem "arel", '4.0.2'
 
 # Paperclip for blog
 gem "paperclip", "~> 3.0"
