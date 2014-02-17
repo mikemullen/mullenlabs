@@ -1,9 +1,26 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<% provide(:title, @article.title ) %>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+	<p>
+	  <h3><%= @article.title %><br /></h3>
+	  
+	</p>
+
+	<p class="pull-right art-img">
+	  <%= image_tag @article.photo.url(:medium) %><br />
+	  <small><em><%= @article.imgcap %></em></small>
+	</p>
+
+	<p>
+	  <strong>By:</strong>
+	  <%= @article.author %> | <small>Added <%= time_ago_in_words(@article.sort_date) %> ago.</small><br />
+	  <%= simple_format h @article.text %><br />
+	</p>
+
+	<p class="text-center">
+	  <%= link_to "Back to All Articles", articles_url %>
+	</p>
+
+  </div>
+</div>

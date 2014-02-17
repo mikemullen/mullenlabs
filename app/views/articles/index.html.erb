@@ -1,0 +1,19 @@
+<% provide(:title, "Articles" ) %>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 text-center">
+    <h3>All Articles</h3>
+  </div>
+</div>
+
+<% @articles.each do |article| %>
+  <div class="row artrow">
+    <div class="col-md-2">
+  	  <%= link_to image_tag(article.photo.url(:thumb)), article %>
+  	</div>
+  	<div class="col-md-10">
+  	  <%= link_to article.title, article, class: "art" %> <br />
+  	  <em><%= article.sort_date.to_formatted_s(:long_ordinal) %></em><br />
+      <%= truncate(article.text, length: 80, separator: ' ') { link_to "Continue", article } %>
+  	</div>
+  </div>
+<% end %>

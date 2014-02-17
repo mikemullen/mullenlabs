@@ -5,6 +5,10 @@ ruby '2.0.0'
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '~> 3.1.0'
 
+group :production do
+  gem 'mysql2'
+end
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -16,6 +20,9 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+
+# Paperclip for blog
+gem "paperclip", "~> 3.0"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
