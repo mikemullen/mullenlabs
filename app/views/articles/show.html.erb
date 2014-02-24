@@ -7,10 +7,12 @@
 	  
 	</p>
 
+  <% if @article.photo_file_name %>
 	<p class="pull-right art-img">
 	  <%= image_tag @article.photo.url(:medium) %><br />
 	  <small><em><%= @article.imgcap %></em></small>
 	</p>
+  <% end %>
 
 	<p>
 	  <strong>By:</strong>

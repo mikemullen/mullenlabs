@@ -8,7 +8,9 @@
 <% @articles.each do |article| %>
   <div class="row artrow">
     <div class="col-md-2">
+      <% if article.photo_file_name %>
   	  <%= link_to image_tag(article.photo.url(:thumb)), article %>
+      <% end %>
   	</div>
   	<div class="col-md-10">
   	  <%= link_to article.title, article, class: "art" %> <br />
